@@ -16,7 +16,7 @@
             <ul>
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#Members">Members</a></li>
-                <li><a href="#Achievements">Our Services</a></li>
+                <li><a href="#Services">Our Services</a></li>
                 <li><a href="#About">About Us</a></li>
                 <li><a href="#Contact">Contact</a></li>
             </ul>
@@ -35,14 +35,27 @@
                         <img src="img/aju.jpg" alt=""><div class="content"><h2>Secretary Arjun</h2><br><br> <p>Founder and Secretary of Navam Welfare Association since 2018. </p> </div>
                 </div>
                 <div class="img1">
-                        <img src="img/sakthi.jpg" alt=""><div class="content"><h2>Vice Secretary Sakthivel</h2><br><br> <p>Founder and Secretary of Navam Welfare Association since 2018. </p> </div>
+                        <img src="img/sakthi.jpg" alt=""><div class="content"><h2>Sakthivel</h2><br><br> <p>Founder of Navam Welfare Association since 2018. </p> </div>
                 </div>
             </div>
         </div> <br><br><br><br><br>
-        <h1 id="Achievements">Our Services</h1><br><br>
-        <div class="banner">
-
-        </div>
+        <h1 id="Services">Our Services</h1><br><br>
+            <div class="main">
+                    <div class="outer-loader">
+                            <div class="text">N</div>
+                            <div class="text">A</div>
+                            <div class="text">V</div>
+                            <div class="text">A</div>
+                            <div class="text">M</div>
+                        </div>
+                <div class="image">
+                    <img src="img/cover1.jpg" alt=""> 
+                    <img src="img/cover2.jpg" alt=""> 
+                    <img src="img/cover3.jpg" alt=""> 
+                    <img src="img/cover4.jpg" alt=""> 
+                    <img src="img/cover5.jpg" alt=""> 
+                </div>
+            </div>
         <br><br><br><br><br>
         <h1 id="About">About Us</h1>
         <div class="about-content">
@@ -92,6 +105,9 @@
                     $('nav').toggleClass('active');
                 });
             });
+            $(window).on('load',function(){
+            $('.outer-loader').fadeOut("slow");
+        });
    </script>
 </body>
 </html>
