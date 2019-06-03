@@ -1,0 +1,316 @@
+@import url(https://fonts.googleapis.com/css?family=Black+Ops+One);
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:#fff;
+
+}
+header{
+    top:0;
+    margin: 0;
+    position: sticky;
+    width:100%;
+    padding:30px;
+    background:rgb(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+span{
+    position: absolute;
+    color:#fff;
+    font-size:50px;
+    font-family: 'Black Ops One', cursive;
+    color:green;
+}
+.logo{
+    margin-top:-10px;
+    height:36px;
+    line-height: 36px;
+    padding: 0 20px;
+    text-align: center;
+    box-sizing: border-box;
+    float:left;
+    text-decoration: none;
+}
+.logo img{
+    height:90px;
+    width:90px;
+}
+nav{
+    float:right;
+
+}
+.clearfix{
+    clear:both;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    display:flex;
+}
+nav ul li{
+    list-style:none;
+}
+nav ul li a{
+    display:block;
+    margin:10px 0;
+    padding:10px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size:20px;
+    font-family: orator std;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    background:#069370;
+    color:#fff;
+    transition:0.5s;
+}
+.cover img{
+    width:100%;
+}
+
+
+ .container .row{
+    display:flex;
+    flex-direction: left;
+    justify-content: space-around;
+    margin:20px;
+    flex-wrap: wrap;
+}
+.container .row .img1{
+   height:300px;
+   width:300px;
+   overflow: hidden;
+   box-sizing: border-box;
+   border-radius:5px;
+}
+.container .row .img1 img{
+    height:300px;
+    width:300px;
+    box-shadow: 0 0 5px 0 black;
+    position: absolute;
+    transition:.5s;
+    z-index:-1;
+    border-radius:5px;
+}
+.content{
+    text-align: center;
+    padding:50px;
+    font-family:arial;
+    font-weight: bold;
+    z-index: -2;
+    position: relative;
+}
+h1{
+    font-weight: bold;
+    font-family: orator std;
+    color:green;
+    text-align: center;
+}
+.img1:hover img{
+    box-shadow: 0 0 20px 0 black;
+}
+.img1:hover img{
+    opacity: 0.2;
+    transform: scale(1.1);
+}
+.banner{
+    position: relative;
+    z-index:-1;
+    margin:25px auto;
+    height:500px;
+    max-width: 1000px;
+    background: url("../img/cover3.jpg");
+    animation:animate 15s linear infinite;
+    box-shadow: 0 0 20px 0 black;
+}
+ @keyframes animate{
+     0%{
+         background: url("../img/cover3.jpg");
+         background-size: 100% 100%;
+         width:100%;
+     }
+     20%{
+         background: url("../img/cover1.jpg");
+         background-size: 100% 100%;
+         width:100%;
+     }
+     40%{
+         background: url("../img/cover2.jpg");
+         background-size: 100% 100%;
+         width:100%;
+     }
+     60%{
+        background: url("../img/cover4.jpg");
+        background-size: 100% 100%;
+        width:100%;
+    }
+    80%{
+        background: url("../img/cover5.jpg");
+        background-size: 100% 100%;
+        width:100%;
+    }
+    100%{
+        background: url("../img/cover6.jpg");
+        background-size: 100% 100%;
+        width:100%;
+    }
+ }
+ 
+ 
+ .about{
+    background:#fff;
+    padding:100px;
+    font-family: arial;
+    text-align: justify;
+    height:auto;
+    -webkit-clip-path: polygon(0 0, 95% 4%, 100% 100%, 5% 95%);
+    clip-path: polygon(0 0, 95% 4%, 100% 100%, 5% 95%);
+}
+.about p{
+    font-size:25px;
+}
+.about-content{
+    background:dodgerblue;
+    position: relative;
+    z-index: -1;
+    margin:25px auto;
+    max-width: 1000px;
+}
+.about ul{
+    list-style:square;
+}
+.about ul li{
+    font-size:25px;
+}
+
+
+.contact{
+    background:rgb(50,50,50);
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.contact-content{
+    text-align: center;
+    padding:60px;
+    color:#fff;
+}
+.contact-content ul{
+    list-style: none;
+    padding:25px;
+}
+.contact-content ul li{
+    margin:15px;
+}
+.contact-content h2{
+    font-size:30px;
+}
+.contact-content ul li{
+    font-size:18px;
+}
+.contact-content ul li a{
+    color:white;
+    text-decoration: none;
+}
+.contact-content ul li a:hover{
+    color:green;
+}
+i{
+    font-family: fontAwesome;
+}
+.footer{
+    background:rgb(50,50,50);
+    max-width:100%;
+    height:auto;
+    padding:20px 50px;
+    text-align:center;
+    font-family:arial;
+    color:#fff;
+}
+@media (max-width:900px)
+{
+    header{
+        padding-left:10px;
+    }
+    .logo{
+        padding:0;
+    }
+    .logo img{
+        margin-top:15px;
+        height:60px;
+        width:60px;
+    }
+    span{
+        font-size:30px;
+        margin:15px 10px;
+    }
+    .bar{
+        display:block;
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        float:right;
+        cursor:pointer;
+        text-align: center;
+        font-size:30px;
+        color:#fff;
+    }
+    .bar:hover{
+        color:green;
+    }
+    .bar:before{
+        content:'\f0c9';
+        font-family:fontAwesome;
+        line-height:40px;
+    }
+    .bar.active:before{
+        content:'\f00d';
+        font-family:fontAwesome;
+        line-height:40px;
+    }
+    nav{
+        display:none;
+    }
+    nav.active{
+        display:block;
+        width:100%;
+    }
+    nav.active ul{
+        display: block;
+        margin-top:30px;
+    }
+    nav.active ul li a
+    {
+        margin: 0;
+    }
+    .container .row .img1{
+        margin-top:50px;
+    }
+    .about{
+        padding:40px;
+    }
+    .about p{
+        font-size:18px;
+    }
+    .contact-content ul{
+        padding:0;
+    }
+    .about ul li{
+        font-size:18px;
+    }
+    .about ul{
+        padding:20px;
+    }
+}
