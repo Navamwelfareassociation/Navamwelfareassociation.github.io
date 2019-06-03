@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Black+Ops+One);
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 *{
     margin: 0;
@@ -25,8 +25,9 @@ header{
 span{
     position: absolute;
     color:#fff;
-    font-size:50px;
-    font-family: 'Black Ops One', cursive;
+    font-size:45px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 .logo{
     margin-top:-10px;
