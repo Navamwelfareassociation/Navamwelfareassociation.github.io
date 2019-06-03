@@ -207,6 +207,9 @@ h1{
     padding:60px;
     color:#fff;
 }
+.contact-conent ul li span{
+    color:green;
+}
 .contact-content ul{
     list-style: none;
     padding:25px;
