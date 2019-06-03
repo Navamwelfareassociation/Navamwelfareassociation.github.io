@@ -27,7 +27,6 @@ span{
     color:#fff;
     font-size:50px;
     font-family: 'Black Ops One', cursive;
-    color:green;
 }
 .logo{
     margin-top:-10px;
@@ -67,9 +66,9 @@ nav ul li a{
     font-size:20px;
     font-family: orator std;
 }
-nav ul li a.active,
 nav ul li a:hover{
     background:#069370;
+    border-radius:5px;
     color:#fff;
     transition:0.5s;
 }
@@ -174,9 +173,24 @@ h1{
     height:auto;
     -webkit-clip-path: polygon(0 0, 95% 4%, 100% 100%, 5% 95%);
     clip-path: polygon(0 0, 95% 4%, 100% 100%, 5% 95%);
+    transform-style: preserve-3d;
+    transform: perspective(600px);
 }
 .about p{
     font-size:25px;
+    transition: all 0.5s ease;
+}
+.about h2{
+    transition: all 0.5s ease;
+}
+.about.hidden h2{
+    opacity:0;
+    transform: translate3d(0,0,400px) rotateY(-40deg);
+}
+
+.about.hidden p{
+    opacity:0;
+    transform: translate3d(0,0,400px) rotateY(40deg);
 }
 .about-content{
     background:dodgerblue;
